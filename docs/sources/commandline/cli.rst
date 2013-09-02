@@ -408,6 +408,19 @@ Insert file from github
 
 The main process inside the container will be sent SIGKILL.
 
+
+.. _cli_load:
+
+``load``
+--------
+
+::
+    Usage: docker load < repository.tar
+
+    Loads a tarred repository from the standard input stream.
+    Restores both images and tags.
+
+
 .. _cli_login:
 
 ``login``
@@ -667,6 +680,17 @@ newly created container with the alias ``redis``.  The new container
 can access the network and environment of the redis container via
 environment variables.  The ``-name`` flag will assign the name ``console``
 to the newly created container.
+
+.. _cli_save:
+
+``save``
+--------
+
+::
+    Usage: docker save image > repository.tar
+
+    Streams a tarred repository to the standard output stream.
+    Contains all parent layers, and all tags + versions.
 
 .. _cli_search:
 
