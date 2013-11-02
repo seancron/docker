@@ -415,6 +415,7 @@ The main process inside the container will be sent SIGKILL.
 --------
 
 ::
+
     Usage: docker load < repository.tar
 
     Loads a tarred repository from the standard input stream.
@@ -687,6 +688,7 @@ to the newly created container.
 --------
 
 ::
+
     Usage: docker save image > repository.tar
 
     Streams a tarred repository to the standard output stream.
